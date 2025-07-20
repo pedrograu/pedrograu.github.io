@@ -289,6 +289,13 @@ body {
     background: white;
     display: inline-block;
     object-fit: contain;
+    min-width: 32px;
+    max-width: 120px;
+    border: 1px solid #E5E7EB;
+}
+
+.company-logo:not([src]), .company-logo[src=""], .company-logo[src*="error"] {
+    display: none;
 }
 
 .experience-header {
