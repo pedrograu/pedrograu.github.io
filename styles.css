@@ -279,15 +279,39 @@ body {
     transform: translateX(10px);
 }
 
+.company-logo {
+    height: 32px;
+    width: auto;
+    margin-right: 12px;
+    vertical-align: middle;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: white;
+    display: inline-block;
+    object-fit: contain;
+}
+
 .experience-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .experience-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+.experience-company a {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.experience-company a:hover {
+    color: #1d4ed8;
 }
 
 .experience-company {
