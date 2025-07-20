@@ -238,6 +238,42 @@ body {
     transform: scale(1.05);
 }
 
+/* Skills */
+.skill-group {
+    margin-bottom: 2rem;
+}
+
+.skill-group h4 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-item {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.skill-item:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
 /* Education Section */
 .education-content {
     max-width: 600px;
@@ -248,30 +284,27 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border-left: 4px solid #10b981;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-item:hover {
-    transform: translateX(10px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.education-header {
-    text-align: center;
-}
-
-.education-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #1e293b;
+.education-item h3 {
+    color: #1f2937;
     margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-.education-institution {
-    font-size: 1.1rem;
-    color: #10b981;
-    font-weight: 500;
+.education-item p {
+    color: #6b7280;
+    font-size: 1rem;
+    margin: 0;
 }
 
 /* Experience Section */
@@ -284,29 +317,24 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
     margin-bottom: 2rem;
-    transition: transform 0.3s ease;
-    border-left: 4px solid #2563eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-item:hover {
-    transform: translateX(10px);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .company-logo {
-    height: 32px;
-    width: auto;
-    margin-right: 12px;
-    vertical-align: middle;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    background: white;
-    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
     object-fit: contain;
-    min-width: 32px;
-    max-width: 120px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .company-logo:not([src]), .company-logo[src=""], .company-logo[src*="error"] {
@@ -322,37 +350,39 @@ body {
 }
 
 .experience-title {
-    margin-bottom: 0;
+    color: #1f2937;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.experience-company {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 
 .experience-company a {
     color: #2563eb;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
 }
 
 .experience-company a:hover {
-    color: #1d4ed8;
-}
-
-.experience-company {
-    font-size: 1.1rem;
-    color: #2563eb;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 0.25rem;
+    text-decoration: underline;
 }
 
 .experience-period {
+    color: #9ca3af;
     font-size: 0.9rem;
-    color: #64748b;
     font-weight: 500;
 }
 
 .experience-description p {
-    color: #475569;
-    line-height: 1.7;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Contact Section */
@@ -364,29 +394,30 @@ body {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
     background: white;
-    padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2563eb;
-    width: 50px;
-    text-align: center;
+    width: 24px;
 }
 
 .contact-item h3 {
@@ -397,14 +428,14 @@ body {
 }
 
 .contact-item a {
-    color: #2563eb;
+    color: #1f2937;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
 .contact-item a:hover {
-    color: #1d4ed8;
+    color: #2563eb;
 }
 
 /* Footer */

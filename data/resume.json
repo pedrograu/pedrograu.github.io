@@ -1,0 +1,71 @@
+{
+  "personal": {
+    "name": "Pedro Grau",
+    "title": "Software Engineer with 10+ years of experience",
+    "email": "pedrograu7@gmail.com",
+    "linkedin": "linkedin.com/in/pedrojgrau"
+  },
+  "about": "Software Engineer with 10+ years of experience, specializing in product-focused solutions across the Gambling and Fintech industries — sectors where data availability and consistency are critical. Skilled at leading teams, managing backlogs, and integrating scalable systems. Known for continuous professional growth and delivering business-driven results.",
+  "skills": {
+    "Programming Languages": ["Java 21", "Kotlin", "SQL"],
+    "Frameworks & Tools": ["Spring Framework", "Axon Framework", "Maven", "Docker", "OpenAPI"],
+    "Infrastructure & Communication": ["RabbitMQ", "PostgreSQL", "Redis", "DynamoDB", "MySQL"],
+    "Management & Soft Skills": ["Scrum Management", "Team Leadership", "Mentoring", "Sales Analysis", "Communication"]
+  },
+  "education": {
+    "degree": "Bachelor in Computer Science",
+    "institution": "University of Seville"
+  },
+  "experience": [
+    {
+      "title": "Software Backend Developer",
+      "company": "Lastminute.com",
+      "location": "Madrid, Spain",
+      "type": "Online Travel Agency",
+      "period": "2024 - Present",
+      "description": "Part of a team responsible for maintaining and enhancing a suite of ten microservices for an online travel agency handling +7k bookings per day. Applying hexagonal architecture and TDD daily on Java 21 and Kotlin code.",
+      "logo": "images/lastminute-logo.png",
+      "website": "https://www.lastminute.com/"
+    },
+    {
+      "title": "Software Backend Developer",
+      "company": "Klearing",
+      "location": "Marbella, Spain",
+      "type": "Start-up, Fintech",
+      "period": "2022 - 2024",
+      "description": "Part of the backend team of a product that made payments and conversions smartly and efficiently. Working with microservice architecture using Java 17, Spring and Axon Framework.",
+      "logo": "images/klearing-logo.png",
+      "website": "https://www.klearing.com/"
+    },
+    {
+      "title": "Integration Technical Leader",
+      "company": "Golden Race",
+      "location": "Widnau, Switzerland",
+      "type": "Gambling product",
+      "period": "2018 - 2022",
+      "description": "Acted as liaison between technical teams and business stakeholders, directly engaging with clients to define integration needs. Mentoring new coworkers and acting as a product owner of the team.",
+      "logo": "images/goldenrace-logo.png",
+      "website": "https://www.goldenrace.com/"
+    },
+    {
+      "title": "Software Backend Developer",
+      "company": "Golden Race",
+      "location": "Sevilla, Spain",
+      "type": "Gambling product",
+      "period": "2015 - 2018",
+      "description": "GoldenRace is a betting product that handles millions of bets per day integrated on more than 500 customers around the world. Implementing JAVA 11 code using Spring Framework and Maven.",
+      "logo": "images/goldenrace-logo.png",
+      "website": "https://www.goldenrace.com/"
+    },
+    {
+      "title": "Software Backend Developer",
+      "company": "Klicap",
+      "location": "Sevilla, Spain",
+      "type": "Start-up, partially working for GoldenRace",
+      "period": "2015 - 2015",
+      "description": "Started this job before finishing my degree. Duties included working on the company product, a suite for continuous integration with Jenkins, Sonar, Redmin, and Nexus.",
+      "logo": "images/klicap-logo.png",
+      "website": "https://www.klicap.com/"
+    }
+  ]
+} 
