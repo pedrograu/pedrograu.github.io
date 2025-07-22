@@ -146,8 +146,45 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+// Fetch and render Medium blog posts
+function fetchMediumPosts(username = 'biratkirat') {
+    const blogContainer = document.getElementById('blog-posts');
+    if (!blogContainer) return;
+    blogContainer.innerHTML = '<p>Loading blog posts...</p>';
+    // Use rss2json to convert Medium RSS to JSON
+    const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${username}`;
+    fetch(feedUrl)
+        .then(res => res.json())
+        .then(data => {
+            if (!data.items || !data.items.length) {
+                blogContainer.innerHTML = '<p>No blog posts found.</p>';
+                return;
+            }
+            blogContainer.innerHTML = '';
+            data.items.slice(0, 5).forEach(post => {
+                const postDiv = document.createElement('div');
+                postDiv.className = 'blog-post';
+                postDiv.innerHTML = `
+                    <h3><a href="${post.link}" target="_blank" rel="noopener">${post.title}</a></h3>
+                    <div class="blog-meta">${new Date(post.pubDate).toLocaleDateString()}${post.categories && post.categories.length ? ' | ' + post.categories.join(', ') : ''}</div>
+                    <p>${post.description.replace(/<[^>]+>/g, '').slice(0, 180)}...</p>
+                `;
+                blogContainer.appendChild(postDiv);
+            });
+        })
+        .catch(() => {
+            blogContainer.innerHTML = '<p>Failed to load blog posts.</p>';
+        });
+}
+
+// Call fetchMediumPosts after DOM and page data are loaded
+function initializePageWithBlog() {
+    initializePage();
+    fetchMediumPosts();
+}
+
 // Initialize page when DOM is loaded
-document.addEventListener('DOMContentLoaded', initializePage);
+document.addEventListener('DOMContentLoaded', initializePageWithBlog);
 
 // PDF Generation Functionality
 function generatePDF() {
