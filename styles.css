@@ -385,6 +385,28 @@ body {
     margin: 0;
 }
 
+.experience-technologies {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.tech-tag {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.35em 0.9em;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #c7d2fe;
+    transition: background 0.2s, color 0.2s;
+}
+.tech-tag:hover {
+    background: #6366f1;
+    color: #fff;
+    border-color: #6366f1;
+}
+
 /* Contact Section */
 .contact-content {
     max-width: 600px;

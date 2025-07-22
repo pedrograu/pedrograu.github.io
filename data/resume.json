@@ -25,7 +25,8 @@
       "period": "2024 - Present",
       "description": "Part of a team responsible for maintaining and enhancing a suite of ten microservices for an online travel agency handling +7k bookings per day. Applying hexagonal architecture and TDD daily on Java 21 and Kotlin code.",
       "logo": "images/lastminute-logo.png",
-      "website": "https://www.lastminute.com/"
+      "website": "https://www.lastminute.com/",
+      "technologies": ["Java 21", "Kotlin", "DynamoDB", "TDD", "Microservices", "Hexagonal Architecture"]
     },
     {
       "title": "Software Backend Developer",
@@ -35,7 +36,8 @@
       "period": "2022 - 2024",
       "description": "Part of the backend team of a product that made payments and conversions smartly and efficiently. Working with microservice architecture using Java 17, Spring and Axon Framework.",
       "logo": "images/klearing-logo.png",
-      "website": "https://www.klearing.com/"
+      "website": "https://www.klearing.com/",
+      "technologies": ["Java 17", "Spring", "Axon Framework", "PostgreSQL", "Redis", "Event-driven", "CQRS", "Currencycloud", "Onfido", "Mindee", "Sendgrid"]
     },
     {
       "title": "Integration Technical Leader",
@@ -45,7 +47,8 @@
       "period": "2018 - 2022",
       "description": "Acted as liaison between technical teams and business stakeholders, directly engaging with clients to define integration needs. Mentoring new coworkers and acting as a product owner of the team.",
       "logo": "images/goldenrace-logo.png",
-      "website": "https://www.goldenrace.com/"
+      "website": "https://www.goldenrace.com/",
+      "technologies": ["OpenAPI", "Swagger", "API Design", "Product Ownership", "Mentoring", "Integration"]
     },
     {
       "title": "Software Backend Developer",
@@ -55,7 +58,8 @@
       "period": "2015 - 2018",
       "description": "GoldenRace is a betting product that handles millions of bets per day integrated on more than 500 customers around the world. Implementing JAVA 11 code using Spring Framework and Maven.",
       "logo": "images/goldenrace-logo.png",
-      "website": "https://www.goldenrace.com/"
+      "website": "https://www.goldenrace.com/",
+      "technologies": ["Java 11", "Spring", "Maven", "Multithreading", "High Traffic", "Virtual Events"]
     },
     {
       "title": "Software Backend Developer",
@@ -65,7 +69,8 @@
       "period": "2015 - 2015",
       "description": "Started this job before finishing my degree. Duties included working on the company product, a suite for continuous integration with Jenkins, Sonar, Redmin, and Nexus.",
       "logo": "images/klicap-logo.png",
-      "website": "https://www.klicap.com/"
+      "website": "https://www.klicap.com/",
+      "technologies": ["Java 8", "Spring", "Maven", "Jenkins", "Sonar", "Redmine", "Nexus"]
     }
   ]
 } 

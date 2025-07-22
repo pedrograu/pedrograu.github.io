@@ -65,6 +65,11 @@ function populatePage() {
         const experienceItem = document.createElement('div');
         experienceItem.className = 'experience-item';
         
+        let techTags = '';
+        if (exp.technologies && exp.technologies.length) {
+            techTags = `<div class="experience-technologies">${exp.technologies.map(tech => `<span class='tech-tag'>${tech}</span>`).join(' ')}</div>`;
+        }
+        
         experienceItem.innerHTML = `
             <div class="experience-header">
                 <img class="company-logo" src="${exp.logo}" alt="${exp.company} logo">
@@ -74,6 +79,7 @@ function populatePage() {
                 </span>
                 <span class="experience-period">${exp.period}</span>
             </div>
+            ${techTags}
             <div class="experience-description">
                 <p>${exp.description}</p>
             </div>
