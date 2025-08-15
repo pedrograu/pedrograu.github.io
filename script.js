@@ -153,7 +153,7 @@ window.addEventListener('load', () => {
 });
 
 // Fetch and render Medium blog posts
-function fetchMediumPosts(username = 'biratkirat') {
+function fetchMediumPosts(username = 'pedrotodo') {
     const blogContainer = document.getElementById('blog-posts');
     if (!blogContainer) return;
     blogContainer.innerHTML = '<p>Loading blog posts...</p>';
